@@ -1,0 +1,35 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# local data
+inbox/
+library/
+runs/
+logs/
+exports/
+obsidian_vault/
+
+# databases
+*.db
+*.sqlite
+*.sqlite3
+
+# extracted artifacts
+extracted/
+knowledge/
+
+# OS/editor
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# secrets
+.env
+*.env
+config/sources.yaml
+config/pipeline.yaml
+config/obsidian.yaml
+secrets/

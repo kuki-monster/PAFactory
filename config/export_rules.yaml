@@ -1,0 +1,11 @@
+mem0_export:
+  allowed_types:
+    - concept
+    - principle
+    - context_rule
+    - procedure
+    - definition
+  min_doctrinal_confidence: 0.85
+  required_status: approved
+  require_clean_source: true
+  exclude_if_unresolved_conflict: true
