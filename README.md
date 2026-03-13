@@ -20,15 +20,15 @@ Phase 1 is mechanically successful enough to baseline.
 
 Confirmed on the current local machine:
 
-\- active database: `db/expert\\\_factory.db`
+\- active database: `db/expert\\\\\\\_factory.db`
 
-\- first successfully processed source: `brooks\\\_trends\\\_2012`
+\- first successfully processed source: `brooks\\\\\\\_trends\\\\\\\_2012`
 
 \- page, section, and chunk JSON outputs were created
 
 \- no Obsidian notes were written yet
 
-\- no log files were present in `logs\\\\`
+\- no log files were present in `logs\\\\\\\\`
 
 
 
@@ -56,13 +56,13 @@ Phase 1 proved the local project spine and basic extraction flow. It did not yet
 
 
 
-1\. `brooks\\\_trends\\\_2012`
+1\. `brooks\\\\\\\_trends\\\\\\\_2012`
 
-2\. `brooks\\\_trading\\\_ranges\\\_2012`
+2\. `brooks\\\\\\\_trading\\\\\\\_ranges\\\\\\\_2012`
 
-3\. `brooks\\\_reversals\\\_2012`
+3\. `brooks\\\\\\\_reversals\\\\\\\_2012`
 
-4\. `brooks\\\_bar\\\_by\\\_bar\\\_2009` as lineage reference
+4\. `brooks\\\\\\\_bar\\\\\\\_by\\\\\\\_bar\\\\\\\_2009` as lineage reference
 
 
 
@@ -108,9 +108,9 @@ This repository should not contain:
 
 
 
-\- `PROJECT\\\_STATE.md` — current factual project state
+\- `PROJECT\\\\\\\_STATE.md` — current factual project state
 
-\- `FILE\\\_MAP.md` — file and folder purpose map
+\- `FILE\\\\\\\_MAP.md` — file and folder purpose map
 
 \- `RUNBOOK.md` — operational steps and recovery guidance
 
@@ -182,10 +182,13 @@ python scripts\\init\_db.py --db db\\expert\_factory.db --schema db\\schema.sql
 
 
 
-python scripts\\register\_source.py --pdf inbox\\Brooks\_2012\_Trading\_Price\_Action\_Trends.pdf --db db\\expert\_factory.db --config config\\sources.yaml
+Register source:
+
+&#x20; 1. Copy `config/sources.example.yaml` → `config/sources.yaml`
+
+&#x20; 2. `python scripts\\register\_source.py --pdf inbox\\Brooks\_2012\_Trading\_Price\_Action\_Trends.pdf --db db\\expert\_factory.db --config config\\sources.yaml`
 
 
 
 python scripts\\run\_pipeline.py --pdf inbox\\Brooks\_2012\_Trading\_Price\_Action\_Trends.pdf --db db\\expert\_factory.db --config config\\sources.yaml
-
 

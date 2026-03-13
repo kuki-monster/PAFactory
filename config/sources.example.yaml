@@ -1,0 +1,27 @@
+# sources.example.yaml
+# ─────────────────────────────────────────────────────────────
+# Copy this file to config/sources.yaml and edit for your local PDFs.
+# sources.yaml is git-ignored (safe). This example is safe to commit.
+# Use the same source_id you see in your DB for brooks_trends_2012.
+
+sources:
+  # Phase 1 book — already processed successfully
+  - file_name: Brooks_2012_Trading_Price_Action_Trends.pdf
+    source_id: brooks_trends_2012
+    priority: 10          # lower number = higher priority
+    role: foundation
+    family: trends
+
+  # Add future Brooks books here when you drop them in inbox/
+  # - file_name: Brooks_2012_Trading_Price_Action_Ranges.pdf
+  #   source_id: brooks_ranges_2012
+  #   priority: 20
+  #   role: foundation
+  #   family: ranges
+
+  # Placeholder for any new PDF
+  # - file_name: Your_New_Book.pdf
+  #   source_id: your_new_book_slug
+  #   priority: 999
+  #   role: unclassified
+  #   family: unclassified
