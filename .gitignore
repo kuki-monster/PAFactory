@@ -1,35 +1,48 @@
+# Python
 .venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
 
-# local data
+# Local data and run artifacts
 inbox/
-library/
+archive/
+failed/
 runs/
 logs/
 exports/
+extracted/
+knowledge/
 obsidian_vault/
+vault/
 
-# databases
+# Databases
 *.db
 *.sqlite
 *.sqlite3
 
-# extracted artifacts
-extracted/
-knowledge/
+# PDFs and source library
+library/
+*.pdf
 
-# OS/editor
+# Environment and secrets
+.env
+*.env
+secrets/
+config/sources.yaml
+config/pipeline.yaml
+config/obsidian.yaml
+
+# VS Code / OS
 .vscode/settings.json
 .DS_Store
 Thumbs.db
 
-# secrets
-.env
-*.env
-config/sources.yaml
-config/pipeline.yaml
-config/obsidian.yaml
-secrets/
+# Build / temp
+*.tmp
+*.bak
+*.log
